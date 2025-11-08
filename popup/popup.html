@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/file.css">
+    <title>Tab Organizer – Group and Export Tabs</title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h3>Save Active Tab URLs</h3>
+    <button id="saveButton" class="custom-btn btn"><span>Click!</span><span>Save URLs to Text File</span></button>
+
+    <div id="urlList"></div>
+
+    <h3>Import URLs</h3>
+    <input type="file" id="importFile" accept=".txt" hidden />
+
+    <label for="importFile"><span>Choose File</span></label>
+
+    <span id="file-chosen">No file chosen</span>
+    <button id="importButton" class="custom-btn btn"><span>Click!</span><span>Import URLs from File</span></button>
+
+    <h3>Group Tabs by Domain</h3>
+    <button id="groupButton" class="custom-btn btn"><span>Click!</span><span>Group Tabs</span></button>
+
+    <h3>Unload Unused Tabs</h3>
+    <button id="unloadButton" class="custom-btn btn"><span>Click!</span><span>Unload Unused Tabs</span></button>
+
+    <script src="js/group.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+
+</html>

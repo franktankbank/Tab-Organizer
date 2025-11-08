@@ -1,0 +1,68 @@
+label {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13)),
+        radial-gradient(
+            90% 7% at 50% 8%,
+            rgba(255, 255, 255, 0.47) 25%,
+            rgba(255, 255, 255, 0) 50%
+        ),
+        rgb(237, 42, 172);
+    border: 0;
+    border-radius: 0.375em;
+    box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.47),
+        0 -0.1em 0 0.1em rgba(0, 0, 0, 0.27),
+        0 0.1em 0 0.1em rgba(255, 255, 255, 0.27),
+        -0.2em 0 0.2em rgb(172, 28, 124) inset,
+        0 0.2em 0.2em rgba(255, 255, 255, 0.27) inset,
+        0.2em 0 0.2em rgba(255, 255, 255, 0.27) inset,
+        0 -0.2em 0.2em rgb(172, 28, 124) inset;
+    color: #fff;
+    cursor: pointer;
+    font: 24px/1.5 sans-serif;
+    margin: 1.5em auto;
+    padding: 0.5em 1em;
+    text-shadow: 0 0 0.2em rgba(255, 255, 255, 0.47);
+    transition-property: box-shadow;
+    -webkit-tap-highlight-color: transparent;
+}
+label,
+label span {
+    display: inline-block;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+label:focus,
+label span:focus {
+    outline: none;
+}
+label span {
+    transition-property: transform;
+    will-change: transform;
+}
+label:active {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.47), 0 -0.1em 0 0.1em rgba(0, 0, 0, 0.27),
+        0 0.1em 0 0.1em rgba(255, 255, 255, 0.27),
+        -0.2em 0 0.2em rgb(132, 19, 94) inset,
+        0 0.2em 0.2em rgba(0, 0, 0, 0.27) inset,
+        0.2em 0 0.2em rgba(0, 0, 0, 0.27) inset,
+        0 -0.2em 0.2em rgb(132, 19, 94) inset;
+}
+label:active span {
+    transform: scale(0.95);
+}
+label:focus {
+    color: rgb(157, 196.1057692308, 255);
+    text-shadow: 0 0 0.2em rgba(157, 196.1057692308, 255, 0.47);
+}
+
+label {
+    padding: 0.5rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#file-chosen {
+    margin-left: 0.5rem;
+    font-family: sans-serif;
+    font: 16px sans-serif;
+}
